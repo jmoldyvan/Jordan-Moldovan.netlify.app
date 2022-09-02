@@ -28,7 +28,11 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
-
+#colum3{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+}
 body {
 	line-height: 1;
 }
@@ -3417,7 +3421,25 @@ input, select, textarea {
 				text-align: center;
 				width: 2.25em;
 			}
-
+			.inner h2 {
+				-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
+					-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
+					-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, -ms-filter 0.25s ease;
+					transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+					-moz-transform: translateX(0);
+					-webkit-transform: translateX(0);
+					-ms-transform: translateX(0);
+					transform: translateX(0);
+					-moz-transition-delay: 0.65s;
+					-webkit-transition-delay: 0.65s;
+					-ms-transition-delay: 0.65s;
+					transition-delay: 0.65s;
+					-moz-filter: blur(0);
+					-webkit-filter: blur(0);
+					-ms-filter: blur(0);
+					filter: blur(0);
+					opacity: 1;
+			}
 		#banner h2 {
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
@@ -3472,7 +3494,7 @@ input, select, textarea {
 		}
 
 		#banner #banner_title{
-			margin-bottom: 15em;
+			margin-bottom: 5em;
 		}
 
 		#banner #dev_site_link a{
