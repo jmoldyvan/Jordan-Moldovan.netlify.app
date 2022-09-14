@@ -1,4 +1,4 @@
 extra
-css/images
-assets/css/images
-/images
+# css/images
+# assets/css/images
+# /images
